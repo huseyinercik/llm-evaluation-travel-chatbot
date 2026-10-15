@@ -1,0 +1,84 @@
+- description: CR-01 | Follow-up on a Cappadocia itinerary
+  vars:
+    input: >-
+      Seyahat planlamamıza devam edelim. Önceki konuşma: "Kapadokya'da iki günüm
+      var; Göreme ve Ürgüp'ü görmek istiyorum." Asistan: "İlk gün Göreme Açık Hava
+      Müzesi ve çevresini, ikinci gün Ürgüp'ü gezebilirsiniz." Şimdi: Bu iki günlük
+      planı toplu taşımayla uygulamak için ulaşım hakkında nelere dikkat etmeliyim?
+
+- description: CR-02 | Follow-up on an Istanbul museum day
+  vars:
+    input: >-
+      İstanbul gezi planıma devam ediyorum. Önceki konuşma: "Ayasofya ve Topkapı
+      Sarayı'nı aynı gün ziyaret edeceğim." Asistan: "İkisi de Tarihî Yarımada'da
+      ve birbirine yürüme mesafesindedir." Şimdi: Ziyaret sırasını ve zaman
+      planlamasını nasıl yapmamı önerirsin?
+
+- description: CR-03 | Follow-up on visiting Ephesus
+  vars:
+    input: >-
+      Efes gezisi hakkında konuşuyorduk. Önceki konuşma: "İzmir'den Efes Antik
+      Kenti'ne günübirlik gitmek istiyorum." Asistan: "Efes, İzmir'in Selçuk
+      ilçesindedir." Şimdi: Selçuk'a ulaştıktan sonra antik kent alanına nasıl
+      geçebilirim ve gezi için ne kadar süre ayırmalıyım?
+
+- description: CR-04 | Follow-up on Pamukkale and Hierapolis
+  vars:
+    input: >-
+      Pamukkale seyahat planımı netleştiriyorum. Önceki konuşma: "Travertenleri
+      ve Hierapolis'i birlikte görmek istiyorum." Asistan: "İki alan Denizli'de
+      yan yana bulunan aynı ören yeri kompleksinin parçalarıdır." Şimdi: Gezi
+      sırasında travertenleri korumak için ziyaretçilerin uyması gereken temel
+      kurallar nelerdir?
+
+- description: CR-05 | Follow-up on a Sümela Monastery visit
+  vars:
+    input: >-
+      Trabzon gezimize devam edelim. Önceki konuşma: "Sümela Manastırı'nı görmek
+      istiyorum." Asistan: "Manastır Maçka ilçesinde, Altındere Vadisi'ndeki dik
+      kayalıkların üzerine kurulmuştur." Şimdi: Ziyarete giderken yol ve hava
+      koşulları açısından neleri kontrol etmeliyim?
+
+- description: CR-06 | Follow-up on a coastal route
+  vars:
+    input: >-
+      Ege ve Akdeniz kıyı rotam hakkında devam ediyorum. Önceki konuşma: "Kaş'tan
+      Fethiye'ye geçmek istiyorum." Asistan: "İki destinasyon da Türkiye'nin
+      güneybatı kıyısındadır; Kaş Antalya'da, Fethiye Muğla'dadır." Şimdi: Bu
+      yolculuk için kara yolu rotası planlarken hangi pratik noktaları göz önünde
+      bulundurmalıyım?
+
+- description: CR-07 | Follow-up on a Cappadocia flight
+  vars:
+    input: >-
+      Kapadokya'ya ulaşım seçeneklerine devam edelim. Önceki konuşma: "Bölgeye
+      uçakla gelmeyi düşünüyorum." Asistan: "Nevşehir Kapadokya ve Kayseri
+      Erkilet havalimanları değerlendirilebilir." Şimdi: Bu iki havalimanından
+      Göreme'ye transfer seçenekleri nasıl farklılaşır?
+
+- description: CR-08 | Follow-up on a Bursa weekend
+  vars:
+    input: >-
+      Bursa hafta sonu planımı konuşuyorduk. Önceki konuşma: "İstanbul'dan deniz
+      yoluyla Bursa'ya geçeceğim ve Uludağ'ı da görmek istiyorum." Asistan:
+      "Marmara Denizi üzerinden ulaşım seçenekleri var; Uludağ Bursa'nın önemli
+      dağ turizmi merkezidir." Şimdi: Şehir merkezinden Uludağ'a çıkış için hangi
+      ulaşım alternatiflerini araştırmalıyım?
+
+- description: CR-09 | Follow-up on visiting Göbeklitepe
+  vars:
+    input: >-
+      Şanlıurfa ziyaret planımı sürdürüyorum. Önceki konuşma: "Şehir merkezini ve
+      Göbeklitepe'yi aynı gün görmek istiyorum." Asistan: "Göbeklitepe, Şanlıurfa
+      şehir merkezinin kuzeydoğusundadır ve Neolitik dönemle ilişkilidir." Şimdi:
+      Bu iki durak için günlük gezi planlarken ulaşım ve ziyaret saatlerini nasıl
+      hesaba katmalıyım?
+
+- description: CR-10 | Follow-up on visiting Safranbolu
+  vars:
+    input: >-
+      Safranbolu gezimi planlamaya devam ediyorum. Önceki konuşma: "Tarihî
+      Safranbolu evlerini görmek istiyorum." Asistan: "Safranbolu, Karabük'te
+      Osmanlı dönemi sivil mimarisiyle tanınan tarihî bir ilçedir." Şimdi: Eski
+      Çarşı ve çevresini yürüyerek gezerken hangi tür duraklara öncelik
+      verebilirim?

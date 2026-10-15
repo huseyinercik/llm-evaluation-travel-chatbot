@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+description: Travel Chatbot - Conversation Inputs Answer Relevance Evaluation
+commandLineOptions:
+  envPath: ../../.env
+
+prompts:
+  - '{{input}}'
+providers: file://providers.yaml
+tests: file://../conversation-relevance/input.yaml
+
+defaultTest:
+  assert:
+    - type: answer-relevance
+      threshold: 0.7
+      metric: answer_relevance
+  options:
+    provider:
+      text:
+        id: openai:chat:gpt-4o-mini
+        config:
+          apiKeyEnvar: OPENAI_API_KEY
+          temperature: 0
+      embedding:
+        id: openai:embedding:text-embedding-3-small
+        config:
+          apiKeyEnvar: OPENAI_API_KEY
+
+evaluateOptions:
+  maxConcurrency: 2
+  delay: 200
+  timeoutMs: 60000
+  cache: false
+
+derivedMetrics: []

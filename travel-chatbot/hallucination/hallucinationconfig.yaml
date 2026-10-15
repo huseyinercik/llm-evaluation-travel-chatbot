@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+description: Travel Chatbot - Hallucination Evaluation
+
+commandLineOptions:
+  envPath: ../../.env
+
+prompts:
+  - '{{input}}'
+providers: file://providers.yaml
+tests: file://input.yaml
+
+defaultTest:
+  assert:
+    - type: llm-rubric
+      metric: hallucination
+      threshold: 0.9
+      value: >-
+        Score the response for factual accuracy and hallucinations. Give a score
+        of 1 when all factual claims are accurate, relevant to the question, and
+        supported by reliable general knowledge, with no invented details. Lower
+        the score for false, fabricated, or unsupported factual claims. Do not
+        penalize a concise answer or an explicit statement of uncertainty.
+  options:
+    provider:
+      id: openai:gpt-4.1-nano
+      config:
+        apiKeyEnvar: OPENAI_API_KEY
+
+evaluateOptions:
+  maxConcurrency: 2
+  delay: 200
+  timeoutMs: 60000
+  cache: false
+
+derivedMetrics: []

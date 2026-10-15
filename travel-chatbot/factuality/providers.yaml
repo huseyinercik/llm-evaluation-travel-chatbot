@@ -1,0 +1,12 @@
+# The chatbot exposes a custom POST endpoint that accepts {"input": "..."}
+# and returns {"output": "..."}.
+- id: https://mehmetalisezgin-travel-agent.hf.space/chat
+  label: travel-chatbot
+  config:
+    method: POST
+    headers:
+      Content-Type: application/json
+      Authorization: 'Bearer {{env.HF_TOKEN}}'
+    body:
+      input: '{{prompt}}'
+    stateful: true

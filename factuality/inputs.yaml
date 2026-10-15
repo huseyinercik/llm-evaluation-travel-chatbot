@@ -1,0 +1,54 @@
+- description: Factuality - Yarali tilki
+  vars:
+    input: "Keloğlan yaralı tilkiye nasıl yardım etti?"
+    reference_answer: >-
+      Keloğlan tilkinin ayağına batan dikeni dikkatlice çıkardı,
+      yarasını temizledi ve gömleğinden kopardığı bir parçayla
+      tilkinin ayağını sardı.
+
+- description: Factuality - Sihirli elmanın özelliği
+  vars:
+    input: "Sihirli elmanın özelliği nedir?"
+    reference_answer: >-
+      Sihirli elma toprağa dikildiğinde gece boyunca altın çiçekler
+      açtırır. Kötü niyetli birinin eline geçerse çiçekler solar ve
+      ülkeye kıtlık gelir.
+
+- description: Factuality - Cadıdan elmayı alma
+  vars:
+    input: "Keloğlan sihirli elmayı cadıdan nasıl aldı?"
+    reference_answer: >-
+      Keloğlan cadıdan su istedi. Cadı kuyunun başına gidince
+      Keloğlan sihirli elmayı alıp hızla kaçtı. Ormanın yollarını iyi
+      bildiği için cadıyı atlattı.
+
+- description: Factuality - Saray bahçesi
+  vars:
+    input: "Keloğlan elmayı sarayın bahçesine diktikten sonra ne oldu?"
+    reference_answer: >-
+      Gece olduğunda sarayın bahçesinde altın çiçekler açtı.
+      Çiçeklerin ışığı bütün ülkeye yayıldı. Kuruyan tarlalar yeniden
+      canlandı, derelerden su akmaya başladı ve köylülerin ambarları doldu.
+
+- description: Factuality - Padişahın ödülü
+  vars:
+    input: "Padişah Keloğlan'ı nasıl ödüllendirmek istedi ve Keloğlan ne yaptı?"
+    reference_answer: >-
+      Padişah Keloğlan'a büyük bir kese altın vermek istedi.
+      Keloğlan altınların yalnızca küçük bir bölümünü aldı. Geri
+      kalanının köydeki fakirlere ve kuruyan tarlaların onarılmasına
+      harcanmasını istedi.
+
+- description: Factuality - Saraydaki görevi
+  vars:
+    input: "Padişah Keloğlan'a hangi görevi verdi ve neden?"
+    reference_answer: >-
+      Padişah Keloğlan'ın zekâsına ve cömertliğine hayran kaldığı için
+      onu sarayda danışman yaptı.
+
+- description: Factuality - Gerçek zenginlik
+  vars:
+    input: "Keloğlan annesine gerçek zenginlik hakkında ne söyledi?"
+    reference_answer: >-
+      Keloğlan annesine insanın gerçek zenginliğinin altın değil; aklı,
+      iyiliği ve paylaşmayı bilmesi olduğunu söyledi.

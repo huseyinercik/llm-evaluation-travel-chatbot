@@ -1,0 +1,199 @@
+- description: "Travel chatbot combined evaluation test 1"
+  vars:
+    input: "Türkiye’nin başkenti Ankara’dan başlayıp Kapadokya’ya giden bir turist, hangi bölgeden İç Anadolu Bölgesi’ne geçiş yapmış olur?"
+
+- description: "Travel chatbot combined evaluation test 2"
+  vars:
+    input: "İstanbul’daki Ayasofya ile Topkapı Sarayı’nı aynı gün ziyaret eden bir turist, hangi tarihî yarımada bölgesini geziyor olur?"
+
+- description: "Travel chatbot combined evaluation test 3"
+  vars:
+    input: "Efes Antik Kenti ile Bergama Antik Kenti aynı gezi programına alınırsa ikisi de hangi il sınırları içindedir?"
+
+- description: "Travel chatbot combined evaluation test 4"
+  vars:
+    input: "Pamukkale travertenleri ile Hierapolis Antik Kenti arasındaki tarihî ve coğrafi ilişki nedir?"
+
+- description: "Travel chatbot combined evaluation test 5"
+  vars:
+    input: "Göbeklitepe ile Şanlıurfa şehir merkezi arasındaki bağlantı nedir ve bu alan hangi tarihî dönemle ilişkilidir?"
+
+- description: "Travel chatbot combined evaluation test 6"
+  vars:
+    input: "Troya Antik Kenti’ni ziyaret eden bir turist, Çanakkale Boğazı’na yakın hangi ilde bulunur?"
+
+- description: "Travel chatbot combined evaluation test 7"
+  vars:
+    input: "Hattuşa ile Hititler arasındaki ilişki nedir ve Hattuşa bugün hangi il sınırındadır?"
+
+- description: "Travel chatbot combined evaluation test 8"
+  vars:
+    input: "Ani Ören Yeri ile Kars şehri arasındaki ilişkiyi ve Ani’nin tarihî niteliğini açıklayın."
+
+- description: "Travel chatbot combined evaluation test 9"
+  vars:
+    input: "Nemrut Dağı’ndaki heykeller hangi krallık dönemine aittir ve alan hangi ilde bulunur?"
+
+- description: "Travel chatbot combined evaluation test 10"
+  vars:
+    input: "Sümela Manastırı’nı ziyaret eden bir turist hangi il ve ilçede, nasıl bir doğal çevrede bulunur?"
+
+- description: "Travel chatbot combined evaluation test 11"
+  vars:
+    input: "Aspendos Antik Tiyatrosu ile Perge Antik Kenti aynı ilde midir? Her ikisinin de bulunduğu ili belirtin."
+
+- description: "Travel chatbot combined evaluation test 12"
+  vars:
+    input: "Side Antik Kenti ile Aspendos’u aynı gün ziyaret etmek isteyen bir turist hangi ilde gezi planlamalıdır?"
+
+- description: "Travel chatbot combined evaluation test 13"
+  vars:
+    input: "Safranbolu evleri ile Osmanlı sivil mimarisi arasındaki ilişki nedir ve Safranbolu hangi ildedir?"
+
+- description: "Travel chatbot combined evaluation test 14"
+  vars:
+    input: "Mardin taş evleri ile Güneydoğu Anadolu’nun tarihî şehir dokusu arasında nasıl bir bağlantı vardır?"
+
+- description: "Travel chatbot combined evaluation test 15"
+  vars:
+    input: "Mevlana Müzesi’ni ziyaret eden bir turist, hangi şehirde hangi düşünce geleneğiyle ilişkilendirilen bir mekânı görür?"
+
+- description: "Travel chatbot combined evaluation test 16"
+  vars:
+    input: "Anıtkabir ile Türkiye Cumhuriyeti’nin kuruluş tarihi arasında nasıl bir bağlantı vardır?"
+
+- description: "Travel chatbot combined evaluation test 17"
+  vars:
+    input: "Dolmabahçe Sarayı ile Topkapı Sarayı’nı karşılaştırın: ikisi de hangi şehirde, fakat hangi farklı tarihî yönetim dönemleriyle öne çıkar?"
+
+- description: "Travel chatbot combined evaluation test 18"
+  vars:
+    input: "Galata Kulesi ile Kız Kulesi İstanbul’un hangi iki farklı kıyı veya semt bağlamında değerlendirilir?"
+
+- description: "Travel chatbot combined evaluation test 19"
+  vars:
+    input: "İstanbul Boğazı’nda Avrupa yakasından Anadolu yakasına geçen bir turist hangi iki kıtayı birbirine bağlayan su yolunu kullanmış olur?"
+
+- description: "Travel chatbot combined evaluation test 20"
+  vars:
+    input: "Çanakkale Boğazı ile İstanbul Boğazı’nın ortak özelliği nedir ve hangi denizleri bağlarlar?"
+
+- description: "Travel chatbot combined evaluation test 21"
+  vars:
+    input: "Kapadokya’da Göreme, Ürgüp ve Avanos’u aynı seyahatte ziyaret eden bir turist ağırlıklı olarak hangi il ve bölgede bulunur?"
+
+- description: "Travel chatbot combined evaluation test 22"
+  vars:
+    input: "Kapadokya’daki peri bacaları hangi doğal süreçlerle ilişkilidir?"
+
+- description: "Travel chatbot combined evaluation test 23"
+  vars:
+    input: "Göreme Açık Hava Müzesi ile Kapadokya’daki kaya kiliseleri arasındaki ilişki nedir?"
+
+- description: "Travel chatbot combined evaluation test 24"
+  vars:
+    input: "Ürgüp’ten Göreme’ye giden bir turist hangi iki Kapadokya yerleşimini birbirine bağlamış olur?"
+
+- description: "Travel chatbot combined evaluation test 25"
+  vars:
+    input: "Antalya’dan Pamukkale’ye giden bir turist hangi iki farklı turizm türünü aynı rotada birleştirebilir?"
+
+- description: "Travel chatbot combined evaluation test 26"
+  vars:
+    input: "İzmir’den Efes’e giden bir turist hangi ilçe merkezine ulaşır ve antik kent hangi medeniyetlerin mirasıyla ilişkilidir?"
+
+- description: "Travel chatbot combined evaluation test 27"
+  vars:
+    input: "Bergama’daki Akropol ile Efes’teki antik yapıları aynı geziye koyan bir turist hangi ortak tarihî mirası izler?"
+
+- description: "Travel chatbot combined evaluation test 28"
+  vars:
+    input: "Hierapolis ile Efes’i karşılaştırın: her ikisi de hangi antik dönemlerin izlerini taşır, ancak hangi farklı coğrafi bağlamlarda bulunur?"
+
+- description: "Travel chatbot combined evaluation test 29"
+  vars:
+    input: "Antik çağda liman kenti olması Efes’in gelişimini nasıl etkilemiştir?"
+
+- description: "Travel chatbot combined evaluation test 30"
+  vars:
+    input: "İzmir’in Selçuk ilçesindeki Efes ile Çanakkale’deki Troya’yı karşılaştırın: hangi ortak coğrafi bölgede yer alırlar?"
+
+- description: "Travel chatbot combined evaluation test 31"
+  vars:
+    input: "Hattuşa, Göbeklitepe ve Troya’yı tarihî dönem açısından karşılaştırın."
+
+- description: "Travel chatbot combined evaluation test 32"
+  vars:
+    input: "Nemrut Dağı ile Göbeklitepe aynı ilde midir? İki alanın bulunduğu illeri ve temel farklarını belirtin."
+
+- description: "Travel chatbot combined evaluation test 33"
+  vars:
+    input: "Şanlıurfa’dan Nemrut Dağı’na tarihî bir rota planlayan turist hangi iki ili ziyaret eder?"
+
+- description: "Travel chatbot combined evaluation test 34"
+  vars:
+    input: "Mardin ile Şanlıurfa’yı kültürel turizm açısından karşılaştırın."
+
+- description: "Travel chatbot combined evaluation test 35"
+  vars:
+    input: "Balıklıgöl ile Göbeklitepe’nin ikisinin de bulunduğu şehir hangisidir ve aralarındaki temel fark nedir?"
+
+- description: "Travel chatbot combined evaluation test 36"
+  vars:
+    input: "Trabzon’daki Sümela Manastırı ile Uzungöl’ü aynı seyahat planına koyan turist hangi doğal bölgenin karakteristiklerini görür?"
+
+- description: "Travel chatbot combined evaluation test 37"
+  vars:
+    input: "Ayder Yaylası ile Uzungöl’ü karşılaştırın: ikisi hangi bölgede bulunur ve turizm açısından hangi ortak özelliği paylaşır?"
+
+- description: "Travel chatbot combined evaluation test 38"
+  vars:
+    input: "Trabzon’dan Rize’ye giden bir turist bölge ve kıyı coğrafyası bakımından ne tür bir geçiş yapar?"
+
+- description: "Travel chatbot combined evaluation test 39"
+  vars:
+    input: "Uzungöl’ün bulunduğu ilçe ile Ayder Yaylası’nın bulunduğu ilçeyi belirtin."
+
+- description: "Travel chatbot combined evaluation test 40"
+  vars:
+    input: "Antalya’daki Kaş ile Muğla’daki Fethiye’yi aynı kıyı rotasında birleştiren turist hangi deniz havzası çevresinde seyahat eder?"
+
+- description: "Travel chatbot combined evaluation test 41"
+  vars:
+    input: "Ölüdeniz, Fethiye ve Saklıkent’i aynı gezi programına koyan turist hangi ilde yoğunlaşır?"
+
+- description: "Travel chatbot combined evaluation test 42"
+  vars:
+    input: "Bodrum, Marmaris ve Fethiye’nin üçü de hangi ilde bulunur ve ortak turizm karakterleri nedir?"
+
+- description: "Travel chatbot combined evaluation test 43"
+  vars:
+    input: "Çeşme ile Alaçatı arasındaki idari ilişki nedir ve ikisi hangi ilde bulunur?"
+
+- description: "Travel chatbot combined evaluation test 44"
+  vars:
+    input: "İzmir’den Çeşme ve Alaçatı’ya giden bir turist, antik kent turizminden çok hangi turizm türlerine yönelmiş olur?"
+
+- description: "Travel chatbot combined evaluation test 45"
+  vars:
+    input: "Uludağ ile Palandöken’i karşılaştırın: hangi illerdedir ve hangi turizm faaliyetleriyle öne çıkarlar?"
+
+- description: "Travel chatbot combined evaluation test 46"
+  vars:
+    input: "Erciyes Dağı ile Kapadokya’yı aynı seyahatte ziyaret eden turist hangi ilde iki farklı doğal turizm deneyimi yaşayabilir?"
+
+- description: "Travel chatbot combined evaluation test 47"
+  vars:
+    input: "Salda Gölü ile Pamukkale’yi aynı gezi rotasına koyan bir turist hangi iki ili ziyaret eder?"
+
+- description: "Travel chatbot combined evaluation test 48"
+  vars:
+    input: "Abant Gölü ile Yedigöller Milli Parkı’nın ortak coğrafi özelliği nedir?"
+
+- description: "Travel chatbot combined evaluation test 49"
+  vars:
+    input: "Sapanca Gölü’nün iki il arasındaki konumu, İstanbul’dan doğuya giden bir turist için neden önemlidir?"
+
+- description: "Travel chatbot combined evaluation test 50"
+  vars:
+    input: "Van Gölü’nü ziyaret eden bir turist hangi iki ilin sınırları içinde bulunan büyük gölü görür?"

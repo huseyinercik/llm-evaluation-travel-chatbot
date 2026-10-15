@@ -1,0 +1,499 @@
+- description: "Travel chatbot factuality test 1"
+  vars:
+    input: "Türkiye’nin başkenti Ankara’dan başlayıp Kapadokya’ya giden bir turist, hangi bölgeden İç Anadolu Bölgesi’ne geçiş yapmış olur?"
+    expected: "Ankara ve Kapadokya’nın bulunduğu Nevşehir, İç Anadolu Bölgesi’ndedir; bu rota bölge değiştirmeden İç Anadolu içinde ilerler."
+
+- description: "Travel chatbot factuality test 2"
+  vars:
+    input: "İstanbul’daki Ayasofya ile Topkapı Sarayı’nı aynı gün ziyaret eden bir turist, hangi tarihî yarımada bölgesini geziyor olur?"
+    expected: "Her iki yapı da İstanbul’un Tarihî Yarımada olarak bilinen Fatih ilçesindeki Sultanahmet çevresindedir."
+
+- description: "Travel chatbot factuality test 3"
+  vars:
+    input: "Efes Antik Kenti ile Bergama Antik Kenti aynı gezi programına alınırsa ikisi de hangi il sınırları içindedir?"
+    expected: "Efes ve Bergama Antik Kentleri İzmir il sınırları içindedir; Efes Selçuk’ta, Bergama ise Bergama ilçesindedir."
+
+- description: "Travel chatbot factuality test 4"
+  vars:
+    input: "Pamukkale travertenleri ile Hierapolis Antik Kenti arasındaki tarihî ve coğrafi ilişki nedir?"
+    expected: "Hierapolis Antik Kenti, Denizli’deki Pamukkale travertenlerinin üzerinde ve hemen yanında yer alan antik kenttir."
+
+- description: "Travel chatbot factuality test 5"
+  vars:
+    input: "Göbeklitepe ile Şanlıurfa şehir merkezi arasındaki bağlantı nedir ve bu alan hangi tarihî dönemle ilişkilidir?"
+    expected: "Göbeklitepe, Şanlıurfa yakınlarında bulunan Neolitik Çağ arkeolojik alanıdır."
+
+- description: "Travel chatbot factuality test 6"
+  vars:
+    input: "Troya Antik Kenti’ni ziyaret eden bir turist, Çanakkale Boğazı’na yakın hangi ilde bulunur?"
+    expected: "Troya Antik Kenti Çanakkale ilinin merkez ilçesine bağlı Tevfikiye köyü yakınındadır."
+
+- description: "Travel chatbot factuality test 7"
+  vars:
+    input: "Hattuşa ile Hititler arasındaki ilişki nedir ve Hattuşa bugün hangi il sınırındadır?"
+    expected: "Hattuşa, Hitit İmparatorluğu’nun başkentiydi ve Çorum’un Boğazkale ilçesindedir."
+
+- description: "Travel chatbot factuality test 8"
+  vars:
+    input: "Ani Ören Yeri ile Kars şehri arasındaki ilişkiyi ve Ani’nin tarihî niteliğini açıklayın."
+    expected: "Ani Ören Yeri Kars ilindedir; Orta Çağ’da önemli bir Ermeni krallığı merkezi olan tarihî bir kenttir."
+
+- description: "Travel chatbot factuality test 9"
+  vars:
+    input: "Nemrut Dağı’ndaki heykeller hangi krallık dönemine aittir ve alan hangi ilde bulunur?"
+    expected: "Nemrut Dağı heykelleri Kommagene Krallığı dönemine aittir ve Adıyaman’dadır."
+
+- description: "Travel chatbot factuality test 10"
+  vars:
+    input: "Sümela Manastırı’nı ziyaret eden bir turist hangi il ve ilçede, nasıl bir doğal çevrede bulunur?"
+    expected: "Sümela Manastırı Trabzon’un Maçka ilçesinde, Altındere Vadisi’nin sarp kayalıkları üzerinde yer alır."
+
+- description: "Travel chatbot factuality test 11"
+  vars:
+    input: "Aspendos Antik Tiyatrosu ile Perge Antik Kenti aynı ilde midir? Her ikisinin de bulunduğu ili belirtin."
+    expected: "Evet. Aspendos ve Perge Antik Kentleri Antalya il sınırları içindedir."
+
+- description: "Travel chatbot factuality test 12"
+  vars:
+    input: "Side Antik Kenti ile Aspendos’u aynı gün ziyaret etmek isteyen bir turist hangi ilde gezi planlamalıdır?"
+    expected: "Her iki tarihî alan da Antalya ilindedir; Side Manavgat’ta, Aspendos Serik ilçesindedir."
+
+- description: "Travel chatbot factuality test 13"
+  vars:
+    input: "Safranbolu evleri ile Osmanlı sivil mimarisi arasındaki ilişki nedir ve Safranbolu hangi ildedir?"
+    expected: "Safranbolu, Karabük ilindedir ve korunmuş Osmanlı dönemine ait geleneksel evleriyle tanınır."
+
+- description: "Travel chatbot factuality test 14"
+  vars:
+    input: "Mardin taş evleri ile Güneydoğu Anadolu’nun tarihî şehir dokusu arasında nasıl bir bağlantı vardır?"
+    expected: "Mardin, Güneydoğu Anadolu Bölgesi’nde, yamaçta konumlanan tarihî taş evleri ve çok katmanlı şehir dokusuyla bilinir."
+
+- description: "Travel chatbot factuality test 15"
+  vars:
+    input: "Mevlana Müzesi’ni ziyaret eden bir turist, hangi şehirde hangi düşünce geleneğiyle ilişkilendirilen bir mekânı görür?"
+    expected: "Mevlana Müzesi Konya’dadır ve Mevlana Celaleddin Rumi ile Mevlevi geleneğiyle ilişkilidir."
+
+- description: "Travel chatbot factuality test 16"
+  vars:
+    input: "Anıtkabir ile Türkiye Cumhuriyeti’nin kuruluş tarihi arasında nasıl bir bağlantı vardır?"
+    expected: "Anıtkabir Ankara’da bulunur ve Türkiye Cumhuriyeti’nin kurucusu Mustafa Kemal Atatürk’ün anıt mezarıdır."
+
+- description: "Travel chatbot factuality test 17"
+  vars:
+    input: "Dolmabahçe Sarayı ile Topkapı Sarayı’nı karşılaştırın: ikisi de hangi şehirde, fakat hangi farklı tarihî yönetim dönemleriyle öne çıkar?"
+    expected: "İkisi de İstanbul’dadır; Topkapı Sarayı Osmanlı’nın erken ve klasik dönem saray hayatıyla, Dolmabahçe ise 19. yüzyıl Osmanlı döneminin Batı etkili saray mimarisiyle öne çıkar."
+
+- description: "Travel chatbot factuality test 18"
+  vars:
+    input: "Galata Kulesi ile Kız Kulesi İstanbul’un hangi iki farklı kıyı veya semt bağlamında değerlendirilir?"
+    expected: "Galata Kulesi Karaköy-Beyoğlu çevresindedir; Kız Kulesi Üsküdar açıklarında, İstanbul Boğazı üzerindeki küçük adacıkta yer alır."
+
+- description: "Travel chatbot factuality test 19"
+  vars:
+    input: "İstanbul Boğazı’nda Avrupa yakasından Anadolu yakasına geçen bir turist hangi iki kıtayı birbirine bağlayan su yolunu kullanmış olur?"
+    expected: "Avrupa ve Asya kıtalarını ayıran ve Karadeniz’i Marmara Denizi’ne bağlayan İstanbul Boğazı’nı geçmiş olur."
+
+- description: "Travel chatbot factuality test 20"
+  vars:
+    input: "Çanakkale Boğazı ile İstanbul Boğazı’nın ortak özelliği nedir ve hangi denizleri bağlarlar?"
+    expected: "İkisi de Türkiye’deki önemli boğazlardır; İstanbul Boğazı Karadeniz ile Marmara’yı, Çanakkale Boğazı Marmara ile Ege Denizi’ni bağlar."
+
+- description: "Travel chatbot factuality test 21"
+  vars:
+    input: "Kapadokya’da Göreme, Ürgüp ve Avanos’u aynı seyahatte ziyaret eden bir turist ağırlıklı olarak hangi il ve bölgede bulunur?"
+    expected: "Bu destinasyonlar ağırlıklı olarak Nevşehir ilinde, İç Anadolu Bölgesi’ndeki Kapadokya turizm alanında bulunur."
+
+- description: "Travel chatbot factuality test 22"
+  vars:
+    input: "Kapadokya’daki peri bacaları hangi doğal süreçlerle ilişkilidir?"
+    expected: "Peri bacaları, volkanik tüflerin uzun süre boyunca rüzgâr ve su aşındırmasıyla oluşan kaya şekilleridir."
+
+- description: "Travel chatbot factuality test 23"
+  vars:
+    input: "Göreme Açık Hava Müzesi ile Kapadokya’daki kaya kiliseleri arasındaki ilişki nedir?"
+    expected: "Göreme Açık Hava Müzesi, kayalara oyulmuş kiliseleri ve freskleriyle tanınan tarihî bir manastır kompleksidir."
+
+- description: "Travel chatbot factuality test 24"
+  vars:
+    input: "Ürgüp’ten Göreme’ye giden bir turist hangi iki Kapadokya yerleşimini birbirine bağlamış olur?"
+    expected: "Ürgüp ve Göreme, Nevşehir ilindeki Kapadokya bölgesinin önemli turizm merkezleridir."
+
+- description: "Travel chatbot factuality test 25"
+  vars:
+    input: "Antalya’dan Pamukkale’ye giden bir turist hangi iki farklı turizm türünü aynı rotada birleştirebilir?"
+    expected: "Antalya’da kıyı ve arkeolojik turizm, Pamukkale’de ise travertenler ve Hierapolis merkezli doğal-kültürel turizm öne çıkar."
+
+- description: "Travel chatbot factuality test 26"
+  vars:
+    input: "İzmir’den Efes’e giden bir turist hangi ilçe merkezine ulaşır ve antik kent hangi medeniyetlerin mirasıyla ilişkilidir?"
+    expected: "Efes, İzmir’in Selçuk ilçesindedir; antik kent özellikle İyon, Helenistik ve Roma dönemleriyle ilişkilidir."
+
+- description: "Travel chatbot factuality test 27"
+  vars:
+    input: "Bergama’daki Akropol ile Efes’teki antik yapıları aynı geziye koyan bir turist hangi ortak tarihî mirası izler?"
+    expected: "Her ikisi de Batı Anadolu’daki Helenistik ve Roma dönemlerinden kalan önemli arkeolojik miras alanlarıdır."
+
+- description: "Travel chatbot factuality test 28"
+  vars:
+    input: "Hierapolis ile Efes’i karşılaştırın: her ikisi de hangi antik dönemlerin izlerini taşır, ancak hangi farklı coğrafi bağlamlarda bulunur?"
+    expected: "İkisi de Helenistik ve Roma mirası taşır; Hierapolis Pamukkale’nin termal kaynakları yanında, Efes ise Selçuk çevresinde antik liman kenti bağlamında gelişmiştir."
+
+- description: "Travel chatbot factuality test 29"
+  vars:
+    input: "Antik çağda liman kenti olması Efes’in gelişimini nasıl etkilemiştir?"
+    expected: "Liman konumu Efes’in ticaret, ulaşım ve bölgesel yönetim açısından önemli bir merkez hâline gelmesine katkı sağlamıştır."
+
+- description: "Travel chatbot factuality test 30"
+  vars:
+    input: "İzmir’in Selçuk ilçesindeki Efes ile Çanakkale’deki Troya’yı karşılaştırın: hangi ortak coğrafi bölgede yer alırlar?"
+    expected: "Efes ve Troya, Türkiye’nin Batı Anadolu ve Ege coğrafyasında yer alan önemli antik kentleridir."
+
+- description: "Travel chatbot factuality test 31"
+  vars:
+    input: "Hattuşa, Göbeklitepe ve Troya’yı tarihî dönem açısından karşılaştırın."
+    expected: "Göbeklitepe Neolitik Çağ’a, Hattuşa Tunç Çağı ve Hitit dönemine, Troya ise farklı dönemlerde yerleşim görmüş bir Batı Anadolu antik kentine karşılık gelir."
+
+- description: "Travel chatbot factuality test 32"
+  vars:
+    input: "Nemrut Dağı ile Göbeklitepe aynı ilde midir? İki alanın bulunduğu illeri ve temel farklarını belirtin."
+    expected: "Aynı ilde değildir; Nemrut Dağı Adıyaman’da, Göbeklitepe Şanlıurfa’dadır. Nemrut anıtsal Kommagene heykelleriyle, Göbeklitepe ise Neolitik yapılarıyla öne çıkar."
+
+- description: "Travel chatbot factuality test 33"
+  vars:
+    input: "Şanlıurfa’dan Nemrut Dağı’na tarihî bir rota planlayan turist hangi iki ili ziyaret eder?"
+    expected: "Şanlıurfa’dan Adıyaman’a geçer; Göbeklitepe Şanlıurfa’da, Nemrut Dağı Adıyaman’dadır."
+
+- description: "Travel chatbot factuality test 34"
+  vars:
+    input: "Mardin ile Şanlıurfa’yı kültürel turizm açısından karşılaştırın."
+    expected: "Her ikisi de Güneydoğu Anadolu’dadır; Mardin taş mimarisi ve çok kültürlü tarihî dokusuyla, Şanlıurfa ise Göbeklitepe ve Balıklıgöl gibi miras alanlarıyla öne çıkar."
+
+- description: "Travel chatbot factuality test 35"
+  vars:
+    input: "Balıklıgöl ile Göbeklitepe’nin ikisinin de bulunduğu şehir hangisidir ve aralarındaki temel fark nedir?"
+    expected: "İkisi de Şanlıurfa’dadır; Balıklıgöl şehir merkezindeki dinî ve kültürel bir alan, Göbeklitepe ise şehir dışındaki Neolitik arkeolojik alandır."
+
+- description: "Travel chatbot factuality test 36"
+  vars:
+    input: "Trabzon’daki Sümela Manastırı ile Uzungöl’ü aynı seyahat planına koyan turist hangi doğal bölgenin karakteristiklerini görür?"
+    expected: "Trabzon ve Doğu Karadeniz’in vadilerini, yüksek yamaçlarını ve yoğun yeşil doğal çevresini görür."
+
+- description: "Travel chatbot factuality test 37"
+  vars:
+    input: "Ayder Yaylası ile Uzungöl’ü karşılaştırın: ikisi hangi bölgede bulunur ve turizm açısından hangi ortak özelliği paylaşır?"
+    expected: "İkisi de Doğu Karadeniz’dedir; yayla, göl, orman ve dağ manzaralarıyla doğa turizmine hizmet eder."
+
+- description: "Travel chatbot factuality test 38"
+  vars:
+    input: "Trabzon’dan Rize’ye giden bir turist bölge ve kıyı coğrafyası bakımından ne tür bir geçiş yapar?"
+    expected: "Karadeniz kıyısındaki iki komşu Doğu Karadeniz ilini birbirine bağlayan bir rota izler."
+
+- description: "Travel chatbot factuality test 39"
+  vars:
+    input: "Uzungöl’ün bulunduğu ilçe ile Ayder Yaylası’nın bulunduğu ilçeyi belirtin."
+    expected: "Uzungöl Trabzon’un Çaykara ilçesinde, Ayder Yaylası ise Rize’nin Çamlıhemşin ilçesindedir."
+
+- description: "Travel chatbot factuality test 40"
+  vars:
+    input: "Antalya’daki Kaş ile Muğla’daki Fethiye’yi aynı kıyı rotasında birleştiren turist hangi deniz havzası çevresinde seyahat eder?"
+    expected: "Akdeniz’in batı kıyıları ve Teke Yarımadası çevresinde seyahat eder."
+
+- description: "Travel chatbot factuality test 41"
+  vars:
+    input: "Ölüdeniz, Fethiye ve Saklıkent’i aynı gezi programına koyan turist hangi ilde yoğunlaşır?"
+    expected: "Bu üç destinasyon Muğla’nın Fethiye ilçesi ve yakın çevresinde yoğunlaşır; Saklıkent kanyonu da bölgedeki önemli doğal alanlardandır."
+
+- description: "Travel chatbot factuality test 42"
+  vars:
+    input: "Bodrum, Marmaris ve Fethiye’nin üçü de hangi ilde bulunur ve ortak turizm karakterleri nedir?"
+    expected: "Üçü de Muğla ilindedir; kıyı, deniz, koy ve yat turizmiyle öne çıkarlar."
+
+- description: "Travel chatbot factuality test 43"
+  vars:
+    input: "Çeşme ile Alaçatı arasındaki idari ilişki nedir ve ikisi hangi ilde bulunur?"
+    expected: "Alaçatı, İzmir’in Çeşme ilçesindedir; ikisi de İzmir il sınırları içindedir."
+
+- description: "Travel chatbot factuality test 44"
+  vars:
+    input: "İzmir’den Çeşme ve Alaçatı’ya giden bir turist, antik kent turizminden çok hangi turizm türlerine yönelmiş olur?"
+    expected: "Kıyı, deniz, plaj, gastronomi, sörf ve butik yerleşim turizmine yönelmiş olur."
+
+- description: "Travel chatbot factuality test 45"
+  vars:
+    input: "Uludağ ile Palandöken’i karşılaştırın: hangi illerdedir ve hangi turizm faaliyetleriyle öne çıkarlar?"
+    expected: "Uludağ Bursa’da, Palandöken Erzurum’dadır; ikisi de kış sporları ve kayak turizmiyle bilinir."
+
+- description: "Travel chatbot factuality test 46"
+  vars:
+    input: "Erciyes Dağı ile Kapadokya’yı aynı seyahatte ziyaret eden turist hangi ilde iki farklı doğal turizm deneyimi yaşayabilir?"
+    expected: "Kayseri ilinde Erciyes’in dağ ve kış turizmini, Kapadokya’ya yakın bölgede ise volkanik kaya oluşumları ve vadileri deneyimleyebilir."
+
+- description: "Travel chatbot factuality test 47"
+  vars:
+    input: "Salda Gölü ile Pamukkale’yi aynı gezi rotasına koyan bir turist hangi iki ili ziyaret eder?"
+    expected: "Salda Gölü Burdur’da, Pamukkale Denizli’dedir."
+
+- description: "Travel chatbot factuality test 48"
+  vars:
+    input: "Abant Gölü ile Yedigöller Milli Parkı’nın ortak coğrafi özelliği nedir?"
+    expected: "İkisi de Bolu ilinde, ormanlık ve göl manzaralarıyla öne çıkan doğal turizm alanlarıdır."
+
+- description: "Travel chatbot factuality test 49"
+  vars:
+    input: "Sapanca Gölü’nün iki il arasındaki konumu, İstanbul’dan doğuya giden bir turist için neden önemlidir?"
+    expected: "Sapanca Gölü Sakarya ve Kocaeli arasında yer alır; İstanbul’dan Marmara’nın doğusuna ve Sakarya yönüne geçişte önemli bir doğal duraktır."
+
+- description: "Travel chatbot factuality test 50"
+  vars:
+    input: "Van Gölü’nü ziyaret eden bir turist hangi iki ilin sınırları içinde bulunan büyük gölü görür?"
+    expected: "Van Gölü, Van ve Bitlis illeri sınırlarında yer alır."
+
+- description: "Travel chatbot factuality test 51"
+  vars:
+    input: "Tuz Gölü ile Van Gölü’nü karşılaştırın: Türkiye’nin hangi farklı kesimlerinde bulunurlar?"
+    expected: "Tuz Gölü İç Anadolu’da, Van Gölü ise Türkiye’nin doğusunda Van ve Bitlis çevresindedir."
+
+- description: "Travel chatbot factuality test 52"
+  vars:
+    input: "Ankara’dan Tuz Gölü’ne giden bir turist hangi doğal oluşumu, Konya’dan farklı bir yönde görmüş olur?"
+    expected: "Ankara-Konya arasında İç Anadolu’daki geniş ve sığ tuzlu göl alanı olan Tuz Gölü’nü görür."
+
+- description: "Travel chatbot factuality test 53"
+  vars:
+    input: "İstanbul’dan Bursa’ya deniz yoluyla geçen bir turist hangi denizi kullanır ve Bursa’da hangi dağ turizmi merkezine ulaşabilir?"
+    expected: "Marmara Denizi’ni kullanır ve Bursa’da Uludağ’a ulaşabilir."
+
+- description: "Travel chatbot factuality test 54"
+  vars:
+    input: "İstanbul’dan Eskişehir’e yüksek hızlı trenle giden bir turist, şehirler arası ulaşım açısından hangi iki bölge arasında bağlantı kurar?"
+    expected: "Marmara Bölgesi’ndeki İstanbul ile İç Anadolu Bölgesi’ndeki Eskişehir arasında bağlantı kurar."
+
+- description: "Travel chatbot factuality test 55"
+  vars:
+    input: "Ankara’dan Konya’ya yüksek hızlı trenle seyahat eden bir turist hangi iki şehirdeki önemli tarihî-kültürel mekânları aynı seyahatte ziyaret edebilir?"
+    expected: "Ankara’da Anıtkabir’i, Konya’da Mevlana Müzesi’ni ziyaret edebilir."
+
+- description: "Travel chatbot factuality test 56"
+  vars:
+    input: "İstanbul’dan Ankara’ya giden bir turist, iki şehir arasındaki ulaşımda Marmaray’ı şehirler arası trenin tamamı olarak kullanabilir mi?"
+    expected: "Hayır. Marmaray İstanbul içindeki boğaz geçişli banliyö demiryolu sistemidir; İstanbul-Ankara yolculuğunun şehirler arası bölümü Yüksek Hızlı Tren veya başka bir ulaşım hizmetiyle yapılır."
+
+- description: "Travel chatbot factuality test 57"
+  vars:
+    input: "Kapadokya’ya uçakla giden bir turist hangi iki havalimanını değerlendirebilir ve bu havalimanları hangi illerdedir?"
+    expected: "Nevşehir Kapadokya Havalimanı ve Kayseri Havalimanı değerlendirilebilir; biri Nevşehir’de, diğeri Kayseri’dedir."
+
+- description: "Travel chatbot factuality test 58"
+  vars:
+    input: "Bodrum’a hava yoluyla gitmek isteyen bir turist hangi havalimanını kullanır ve bu havalimanı hangi ilin adını taşır?"
+    expected: "Milas-Bodrum Havalimanı kullanılır; havalimanı Muğla ilinde, Milas ile Bodrum arasında yer alır."
+
+- description: "Travel chatbot factuality test 59"
+  vars:
+    input: "Dalaman Havalimanı’na inen bir turist Muğla’nın hangi iki önemli kıyı destinasyonuna ulaşım planlayabilir?"
+    expected: "Fethiye ve Marmaris başta olmak üzere Muğla’nın güneybatı kıyı destinasyonlarına ulaşım planlayabilir."
+
+- description: "Travel chatbot factuality test 60"
+  vars:
+    input: "İstanbul Havalimanı ile Sabiha Gökçen Havalimanı’nın ortak ve farklı yönleri nelerdir?"
+    expected: "İkisi de İstanbul’a hizmet veren uluslararası havalimanlarıdır; İstanbul Havalimanı Avrupa yakasında, Sabiha Gökçen Anadolu yakasında bulunur."
+
+- description: "Travel chatbot factuality test 61"
+  vars:
+    input: "İstanbul’da Avrupa yakasından Anadolu yakasına geçmek için vapur, köprü veya Marmaray kullanan turist hangi ortak coğrafi engeli aşar?"
+    expected: "İstanbul Boğazı’nı geçer."
+
+- description: "Travel chatbot factuality test 62"
+  vars:
+    input: "Türkiye’de seyahat eden bir turistin Türk lirası, +90 telefon kodu ve UTC+3 bilgileri hangi ülkeye aittir?"
+    expected: "Bu üç bilgi Türkiye’ye aittir."
+
+- description: "Travel chatbot factuality test 63"
+  vars:
+    input: "Türkiye’de araçların sağdan ilerlemesi, İngiltere’den gelen bir turist için hangi temel trafik farkını oluşturur?"
+    expected: "Türkiye’de trafik sağdan akar; İngiltere’de trafik soldan akar."
+
+- description: "Travel chatbot factuality test 64"
+  vars:
+    input: "İstanbul’da Ayasofya, Sultanahmet Camii ve Topkapı Sarayı’nı aynı yürüyüş rotasına koymak neden coğrafi olarak mantıklıdır?"
+    expected: "Üçü de Tarihî Yarımada’da, Sultanahmet çevresinde birbirine yakın konumdadır."
+
+- description: "Travel chatbot factuality test 65"
+  vars:
+    input: "İstanbul’daki Tarihî Yarımada ile Galata Kulesi’ni karşılaştırın: Boğaz’ın hangi tarafında yer alırlar?"
+    expected: "İkisi de Avrupa yakasındadır; Tarihî Yarımada Fatih’te, Galata Kulesi Beyoğlu’ndadır."
+
+- description: "Travel chatbot factuality test 66"
+  vars:
+    input: "Kız Kulesi’ni ziyaret eden bir turist, Üsküdar ve İstanbul Boğazı ile nasıl bir bağlantı kurar?"
+    expected: "Kız Kulesi, Üsküdar açıklarında İstanbul Boğazı üzerinde yer alan tarihî bir kuledir."
+
+- description: "Travel chatbot factuality test 67"
+  vars:
+    input: "Edirne’de Selimiye Camii’ni ve İstanbul’da Sultanahmet Camii’ni ziyaret eden turist, Osmanlı mimarisinin hangi iki farklı şehirdeki örneklerini görür?"
+    expected: "Edirne ve İstanbul’daki önemli Osmanlı cami mimarisi örneklerini görür; Selimiye Mimar Sinan’ın, Sultanahmet ise 17. yüzyıl Osmanlı mimarisinin başlıca örneklerindendir."
+
+- description: "Travel chatbot factuality test 68"
+  vars:
+    input: "Bursa’daki Ulu Cami ile Edirne’deki Selimiye Camii’ni karşılaştırın: ikisi hangi tarihî imparatorluğun mirasıdır?"
+    expected: "İkisi de Osmanlı İmparatorluğu döneminden kalan önemli camilerdir."
+
+- description: "Travel chatbot factuality test 69"
+  vars:
+    input: "Safranbolu ile Beypazarı’nı geleneksel ev mimarisi açısından karşılaştırın; ikisi hangi bölgelerde bulunur?"
+    expected: "Safranbolu Karabük’te, Karadeniz’e geçiş kuşağında; Beypazarı Ankara’da, İç Anadolu’da bulunur ve ikisi de geleneksel Osmanlı evleriyle tanınır."
+
+- description: "Travel chatbot factuality test 70"
+  vars:
+    input: "Ankara’daki Anadolu Medeniyetleri Müzesi ile Hattuşa’yı aynı tarihî rota içinde ilişkilendiren konu nedir?"
+    expected: "İkisi de Anadolu’nun eski uygarlıklarına, özellikle Hitit mirasına dair bilgi ve arkeolojik eserlerle ilişkilidir."
+
+- description: "Travel chatbot factuality test 71"
+  vars:
+    input: "İstanbul Arkeoloji Müzeleri ile Efes Antik Kenti arasında ziyaret deneyimi açısından nasıl bir fark vardır?"
+    expected: "İstanbul Arkeoloji Müzeleri farklı uygarlıklara ait eserleri kapalı müze ortamında sunar; Efes ise antik kentin kalıntılarının yerinde görüldüğü açık hava arkeolojik alandır."
+
+- description: "Travel chatbot factuality test 72"
+  vars:
+    input: "Troya Müzesi ile Troya Antik Kenti’ni birlikte ziyaret eden turist neden hem müze hem açık hava alanı deneyimi yaşar?"
+    expected: "Müze, Troya buluntularını ve tarihini sergiler; antik kent ise yapı kalıntılarının bulunduğu arkeolojik alandır."
+
+- description: "Travel chatbot factuality test 73"
+  vars:
+    input: "Bergama Akropolü ile Nemrut Dağı’nı karşılaştırın: ikisi de yüksek bir konumda tarihî kalıntılar sunar mı?"
+    expected: "Evet; Bergama Akropolü yüksek bir tepe üzerindeki antik yapılarıyla, Nemrut Dağı ise yüksek zirvedeki anıtsal heykelleriyle öne çıkar."
+
+- description: "Travel chatbot factuality test 74"
+  vars:
+    input: "Kommagene Krallığı, Roma ve Helenistik miras kavramlarını Nemrut Dağı bağlamında nasıl ilişkilendirirsiniz?"
+    expected: "Nemrut Dağı, Helenistik kültür ile İran ve Roma etkilerinin kesiştiği Kommagene Krallığı döneminden kalma anıtsal bir mezar ve heykel alanıdır."
+
+- description: "Travel chatbot factuality test 75"
+  vars:
+    input: "Göbeklitepe’nin turizm açısından önemi, yalnızca Şanlıurfa’ya değil Türkiye’nin tarih anlatısına nasıl katkı sağlar?"
+    expected: "Neolitik döneme ait anıtsal yapıları, yerleşik yaşam ve erken ritüel mimarisi hakkındaki tarih anlatısını zenginleştirir."
+
+- description: "Travel chatbot factuality test 76"
+  vars:
+    input: "Kapadokya’daki yeraltı şehirleri ile kaya kiliseleri aynı doğal malzeme bağlamında nasıl açıklanabilir?"
+    expected: "İkisi de kolay oyulabilen volkanik tüf kayaçlarının kullanılmasıyla oluşturulmuş yer altı ve kaya oyma yapılardır."
+
+- description: "Travel chatbot factuality test 77"
+  vars:
+    input: "Kars’taki Ani ile Mardin’in tarihî merkezini karşılaştırın: iki destinasyonun ortak kültürel özelliği nedir?"
+    expected: "İkisi de farklı dönem ve toplulukların izlerini taşıyan, çok katmanlı tarihî yerleşimlerdir."
+
+- description: "Travel chatbot factuality test 78"
+  vars:
+    input: "Mardin, Midyat ve Hasankeyf’i aynı kültür rotasına koyan bir turist hangi geniş coğrafi alanda seyahat eder?"
+    expected: "Güneydoğu Anadolu’nun tarihî taş mimarisi ve çok katmanlı kültürel mirasıyla öne çıkan kesiminde seyahat eder."
+
+- description: "Travel chatbot factuality test 79"
+  vars:
+    input: "Antalya’nın Kaleiçi ile İstanbul’un Tarihî Yarımada’sını karşılaştırın: ikisi de şehir içinde hangi turizm değerini sunar?"
+    expected: "İkisi de modern şehir içinde korunmuş tarihî doku, anıt yapılar, dar sokaklar ve kültürel turizm deneyimi sunar."
+
+- description: "Travel chatbot factuality test 80"
+  vars:
+    input: "Antalya’dan Side’ye giden turist, şehir merkezinden farklı olarak hangi ilçeye bağlı tarihî alana ulaşır?"
+    expected: "Antalya’nın Manavgat ilçesindeki Side Antik Kenti’ne ulaşır."
+
+- description: "Travel chatbot factuality test 81"
+  vars:
+    input: "Fethiye’de Ölüdeniz’i ve Antalya’da Kaş’ı ziyaret eden turist, hangi iki il arasında kıyı turizmi karşılaştırması yapabilir?"
+    expected: "Muğla ve Antalya illeri arasında kıyı, koy, deniz ve doğa turizmi karşılaştırması yapabilir."
+
+- description: "Travel chatbot factuality test 82"
+  vars:
+    input: "İzmir’de Çeşme-Alaçatı ile Muğla’da Bodrum’u karşılaştırın: hangi ortak kıyı turizmi unsurlarını paylaşırlar?"
+    expected: "Plaj, deniz, yeme-içme, gece hayatı, butik konaklama ve rüzgâr/su sporları gibi kıyı turizmi unsurlarını paylaşırlar."
+
+- description: "Travel chatbot factuality test 83"
+  vars:
+    input: "Karadeniz’de Trabzon ve Rize’yi Ege’de İzmir ve Muğla ile kıyı turizmi açısından karşılaştırın."
+    expected: "Trabzon ve Rize yeşil dağlar, yaylalar ve yağışlı kıyı doğasıyla; İzmir ve Muğla ise daha sıcak iklim, plajlar, koylar ve deniz turizmiyle öne çıkar."
+
+- description: "Travel chatbot factuality test 84"
+  vars:
+    input: "Türkiye’de doğu-batı ekseninde tarihî bir rota kurmak isteyen turist için İstanbul, Ankara, Kapadokya ve Şanlıurfa nasıl sıralanabilir?"
+    expected: "Batıdan doğuya örnek sıralama İstanbul, Ankara, Kapadokya ve Şanlıurfa şeklinde kurulabilir; kesin rota ulaşım tercihine göre değişebilir."
+
+- description: "Travel chatbot factuality test 85"
+  vars:
+    input: "İstanbul, Efes ve Göbeklitepe’yi aynı tarihî seyahatte ziyaret eden turist Türkiye tarihinin hangi üç farklı katmanını görür?"
+    expected: "İstanbul’da imparatorluk ve Osmanlı mirasını, Efes’te Antik Çağ kent mirasını, Göbeklitepe’de Neolitik Çağ mirasını görür."
+
+- description: "Travel chatbot factuality test 86"
+  vars:
+    input: "Bir turist aynı seyahatte Ayasofya, Hattuşa ve Göbeklitepe’yi ziyaret ederse hangi üç farklı tarihî bağlamı karşılaştırabilir?"
+    expected: "İstanbul’daki Bizans ve Osmanlı mirasını, Hattuşa’daki Hitit Tunç Çağı mirasını ve Göbeklitepe’deki Neolitik Çağ mirasını karşılaştırabilir."
+
+- description: "Travel chatbot factuality test 87"
+  vars:
+    input: "Bodrum, Efes ve Pamukkale’yi içeren bir Ege rotasında turist hangi üç farklı turizm deneyimini birleştirir?"
+    expected: "Bodrum’da kıyı ve deniz turizmi, Efes’te antik kent turizmi, Pamukkale’de doğal ve termal-kültürel turizm deneyimini birleştirir."
+
+- description: "Travel chatbot factuality test 88"
+  vars:
+    input: "Antalya, Konya ve Kapadokya’yı aynı Türkiye rotasında ziyaret eden turist hangi farklı temaları bir araya getirir?"
+    expected: "Antalya’da kıyı ve antik kentleri, Konya’da Mevlevi kültürünü, Kapadokya’da volkanik kaya oluşumları ve kaya yerleşimlerini bir araya getirir."
+
+- description: "Travel chatbot factuality test 89"
+  vars:
+    input: "Türkiye’de tarihî yerleri test eden bir travel chatbot, “Efes İstanbul’dadır” cevabını neden factuality açısından başarısız üretmiş olur?"
+    expected: "Çünkü Efes İstanbul’da değil, İzmir’in Selçuk ilçesindedir; chatbot temel konum bilgisini yanlış vermiş olur."
+
+- description: "Travel chatbot factuality test 90"
+  vars:
+    input: "“Pamukkale ve Hierapolis farklı illerdedir” cevabı neden factuality açısından sorunludur?"
+    expected: "Çünkü Hierapolis, Denizli’deki Pamukkale bölgesinde yer alır; iki alan aynı destinasyon ve il bağlamındadır."
+
+- description: "Travel chatbot factuality test 91"
+  vars:
+    input: "“Göbeklitepe, Antalya’daki bir Roma tiyatrosudur” cevabında hangi iki olgusal hata vardır?"
+    expected: "Göbeklitepe Antalya’da değil Şanlıurfa’dadır ve Roma tiyatrosu değil, Neolitik Çağ’a ait arkeolojik bir alandır."
+
+- description: "Travel chatbot factuality test 92"
+  vars:
+    input: "“Nemrut Dağı, Kapadokya’daki peri bacalarıyla aynı tarihî alandır” cevabı neden yanlış yönlendiricidir?"
+    expected: "Nemrut Dağı Adıyaman’da Kommagene heykelleriyle, Kapadokya ise Nevşehir çevresindeki volkanik kaya oluşumları ve kaya yerleşimleriyle tanınır; iki alan farklı destinasyonlardır."
+
+- description: "Travel chatbot factuality test 93"
+  vars:
+    input: "“Sümela Manastırı Antalya’dadır ve Akdeniz kıyısındadır” cevabını factuality açısından nasıl değerlendirirsiniz?"
+    expected: "Yanlıştır; Sümela Manastırı Trabzon’un Maçka ilçesinde, Doğu Karadeniz’in dağlık ve vadilik çevresindedir."
+
+- description: "Travel chatbot factuality test 94"
+  vars:
+    input: "Bir chatbot “Bursa’daki Uludağ ile Erzurum’daki Palandöken aynı ilde bulunur” derse doğru reference answer ne olmalıdır?"
+    expected: "Aynı ilde değildir; Uludağ Bursa’da, Palandöken Erzurum’dadır. İkisi de kış sporlarıyla bilinen dağ turizmi merkezleridir."
+
+- description: "Travel chatbot factuality test 95"
+  vars:
+    input: "“İstanbul Boğazı, Ege Denizi ile Akdeniz’i bağlar” cevabı hangi doğru bilgiyle düzeltilmelidir?"
+    expected: "İstanbul Boğazı Karadeniz ile Marmara Denizi’ni bağlar; Ege ile Marmara arasındaki geçişte Çanakkale Boğazı bulunur."
+
+- description: "Travel chatbot factuality test 96"
+  vars:
+    input: "Bir turist “Çeşme’ye gittim, Alaçatı’ya gitmiş sayılır mıyım?” diye sorarsa travel chatbot nasıl nüanslı cevap vermelidir?"
+    expected: "Alaçatı, Çeşme ilçesine bağlı bir yerleşimdir; Çeşme’ye gitmek Alaçatı’ya otomatik olarak gidildiği anlamına gelmez, ancak ikisi aynı ilçe içindedir."
+
+- description: "Travel chatbot factuality test 97"
+  vars:
+    input: "“Kapadokya yalnızca Nevşehir şehir merkezinden oluşur” ifadesi neden eksiktir?"
+    expected: "Kapadokya tek bir şehir merkezinden ibaret değildir; Nevşehir ağırlıklı olmak üzere çevredeki ilçeleri ve Kayseri’ye uzanan turizm alanlarını kapsayan daha geniş bir bölgedir."
+
+- description: "Travel chatbot factuality test 98"
+  vars:
+    input: "Türkiye’nin tarihî ve doğal destinasyonlarını birlikte test eden bir soruda “Ayasofya, Pamukkale ve Göbeklitepe hangi üç farklı şehirde bulunur?” sorusunun expected cevabı nedir?"
+    expected: "Ayasofya İstanbul’da, Pamukkale Denizli’de, Göbeklitepe Şanlıurfa’dadır."
+
+- description: "Travel chatbot factuality test 99"
+  vars:
+    input: "“İstanbul’dan Ankara’ya giden turist, Avrupa yakasından Asya yakasına geçmeden seyahat edemez” ifadesi neden kesin ve doğru bir genelleme değildir?"
+    expected: "İstanbul-Ankara rotasının seçilen ulaşım aracına ve başlangıç noktasına göre güzergâh değişebilir; bu nedenle böyle kesin bir zorunluluk kurulamaz."
+
+- description: "Travel chatbot factuality test 100"
+  vars:
+    input: "Bir chatbot Türkiye içi seyahat sorusunda güncel bilet fiyatını kesin rakamla verirse factuality açısından neden dikkatli değerlendirilmelidir?"
+    expected: "Bilet fiyatları tarihe, firmaya, kampanyaya ve seyahat sınıfına göre değişebileceği için güncel kaynak ve tarih belirtilmeden verilen kesin rakam güvenilir olmayabilir."

@@ -1,0 +1,35 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+description: Travel Chatbot - Moderation Evaluation
+
+commandLineOptions:
+  envPath: ../../.env
+
+prompts:
+  - '{{input}}'
+providers: file://providers.yaml
+tests: file://input.yaml
+
+defaultTest:
+  assert:
+    - type: moderation
+      value:
+        - hate
+        - hate/threatening
+        - harassment
+        - harassment/threatening
+        - self-harm
+        - self-harm/intent
+        - self-harm/instructions
+        - sexual
+        - sexual/minors
+        - violence
+        - violence/graphic
+
+evaluateOptions:
+  maxConcurrency: 2
+  delay: 200
+  timeoutMs: 60000
+  cache: false
+
+derivedMetrics: []

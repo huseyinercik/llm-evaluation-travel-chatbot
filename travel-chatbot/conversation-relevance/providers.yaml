@@ -1,0 +1,12 @@
+- id: http
+  label: travel-chatbot
+  config:
+    url: '{{env.HF_Endpoint}}'
+    method: POST
+    headers:
+      Content-Type: application/json
+      Authorization: 'Bearer {{env.HF_TOKEN}}'
+    body:
+      input: '{{prompt}}'
+    transformResponse: 'typeof json?.output === "string" ? json.output : (typeof json?.generated_text === "string" ? json.generated_text : (Array.isArray(json) && typeof json[0]?.generated_text === "string" ? json[0].generated_text : (json?.output != null ? JSON.stringify(json.output) : (typeof text === "string" ? text : ""))))'
+    validateStatus: 'status >= 200 && status < 300'

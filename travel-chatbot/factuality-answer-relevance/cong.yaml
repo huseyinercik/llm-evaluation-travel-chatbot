@@ -1,0 +1,91 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+description: Travel Chatbot - Factuality and Answer Relevance
+
+commandLineOptions:
+  envPath: ../../.env
+
+prompts:
+  - '{{input}}'
+
+providers:
+  - id: http
+    label: travel-chatbot
+    config:
+      url: '{{env.HF_Endpoint}}'
+      method: POST
+      headers:
+        Content-Type: application/json
+        Authorization: 'Bearer {{env.HF_TOKEN}}'
+      body:
+        input: '{{prompt}}'
+      transformResponse: 'typeof json?.output === "string" ? json.output : (typeof json?.generated_text === "string" ? json.generated_text : (Array.isArray(json) && typeof json[0]?.generated_text === "string" ? json[0].generated_text : (json?.output != null ? JSON.stringify(json.output) : (typeof text === "string" ? text : ""))))'
+      validateStatus: 'status >= 200 && status < 300'
+
+defaultTest:
+  options:
+    provider:
+      text:
+        id: openai:chat:gpt-4o-mini
+        config:
+          apiKeyEnvar: OPENAI_API_KEY
+          temperature: 0
+      embedding:
+        id: openai:embedding:text-embedding-3-small
+        config:
+          apiKeyEnvar: OPENAI_API_KEY
+
+evaluateOptions:
+  maxConcurrency: 2
+  delay: 200
+  timeoutMs: 60000
+  cache: false
+
+tests:
+  - description: Cappadocia location and relevance
+    vars:
+      input: "Kapadokya hangi şehirlerde yer alır ve neden turistler tarafından tercih edilir?"
+    assert:
+      - type: factuality
+        provider:
+          id: openai:gpt-4.1-nano
+          config:
+            apiKeyEnvar: OPENAI_API_KEY
+        value: >
+          Kapadokya bölgesi ağırlıklı olarak Nevşehir'de bulunur;
+          ayrıca Kayseri, Aksaray ve Niğde çevresine de uzanır.
+          Bölge peri bacaları, yer altı şehirleri, kaya kiliseleri
+          ve sıcak hava balonu turlarıyla bilinir.
+      - type: answer-relevance
+        threshold: 0.8
+
+  - description: Pamukkale factuality and relevance
+    vars:
+      input: "Pamukkale nerede ve oraya giden bir turist ne görebilir?"
+    assert:
+      - type: factuality
+        provider:
+          id: openai:gpt-4.1-nano
+          config:
+            apiKeyEnvar: OPENAI_API_KEY
+        value: >
+          Pamukkale Denizli ilindedir.
+          Travertenleri, termal suları ve Hierapolis Antik Kenti ile tanınır.
+      - type: answer-relevance
+        threshold: 0.8
+
+  - description: Istanbul to Bursa travel question
+    vars:
+      input: "İstanbul'dan Bursa'ya gitmek isteyen bir turist hangi ulaşım seçeneklerini kullanabilir?"
+    assert:
+      - type: factuality
+        provider:
+          id: openai:gpt-4.1-nano
+          config:
+            apiKeyEnvar: OPENAI_API_KEY
+        value: >
+          İstanbul'dan Bursa'ya kara yolu ile otobüs veya özel araçla gidilebilir.
+          Ayrıca İstanbul'dan deniz otobüsü veya feribot ile Bursa çevresindeki
+          terminallere ulaşıp yolculuğa kara yolu ile devam etmek mümkündür.
+      - type: answer-relevance
+        threshold: 0.8

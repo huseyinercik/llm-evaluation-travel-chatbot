@@ -1,0 +1,53 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+description: Travel Chatbot - Hallucination and Answer Relevance Evaluation
+
+commandLineOptions:
+  envPath: ../../.env
+
+prompts:
+  - '{{input}}'
+providers: file://providers.yaml
+tests: file://input.yaml
+
+defaultTest:
+  threshold: 0.8
+  assert:
+    - type: llm-rubric
+      provider:
+        id: openai:gpt-4.1-nano
+        config:
+          apiKeyEnvar: OPENAI_API_KEY
+      metric: hallucination
+      threshold: 0.9
+      weight: 2
+      value: >-
+        Yanıtı olgusal doğruluk ve halüsinasyon açısından 0 ile 1 arasında
+        puanla. Yanıttaki olgusal iddialar doğruysa ve uydurulmuş ya da
+        dayanaksız bilgi içermiyorsa 1 ver. Yanlış, uydurulmuş veya güvenilir
+        genel bilgiyle desteklenmeyen iddialar için puanı düşür. Yanıtın kısa
+        olmasını veya belirsizlik durumunda bunu açıkça belirtmesini
+        cezalandırma.
+    - type: answer-relevance
+      metric: answer_relevance
+      threshold: 0.9
+      weight: 1
+  options:
+    provider:
+      text:
+        id: openai:chat:gpt-4o-mini
+        config:
+          apiKeyEnvar: OPENAI_API_KEY
+          temperature: 0.6
+      embedding:
+        id: openai:embeddings:text-embedding-3-small
+        config:
+          apiKeyEnvar: OPENAI_API_KEY
+
+evaluateOptions:
+  maxConcurrency: 2
+  delay: 200
+  timeoutMs: 60000
+  cache: false
+
+derivedMetrics: []
